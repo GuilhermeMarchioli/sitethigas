@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VerdeViva Mini Hortas</title>
+  <script src="https://kit.fontawesome.com/f1da051f34.js" crossorigin="anonymous"></script>
+  <style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f5fff5;
+      color: #2f4f2f;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #4caf50;
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+    }
+
+    nav {
+      background-color: #388e3c;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 10%;
+    }
+
+    h2 {
+      color: #388e3c;
+      border-left: 5px solid #4caf50;
+      padding-left: 10px;
+    }
+
+.produtos {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+}
+
+.produto {
+  min-width: 250px;
+  background-color: white;
+  padding: 30px;
+  padding-bottom: 45px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  scroll-snap-align: start;
+  transition: all 0.5s;
+}
+
+.produtos::-webkit-scrollbar {
+  height: 8px;
+}
+
+.produtos::-webkit-scrollbar-thumb {
+  background: #4caf50;
+  border-radius: 10px;
+}
+
+    .produto:hover {
+        transform: scale(110%);
+    }
+
+    .produto img {
+        height: 50%;
+    }
+
+    .produto button {
+        padding: 15px 10px;
+        border: none;
+        border-radius: 15px;
+        color: white;
+        background-color: #4caf50;
+        font-weight: bold
+    }
+
+    .produto button:hover {
+        background-color: #2f4f2f;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+
+    footer {
+      background-color: #4caf50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌿 VerdeViva Mini Hortas 🌿</h1>
+    <p>Conectando pessoas à natureza, um vasinho por vez.</p>
+  </header>
+
+  <nav>
+    <a href="#missao">Missão</a>
+    <a href="#valores">Valores</a>
+    <a href="#historia">História</a>
+    <a href="#produtos">Produtos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="missao">
+    <h2><i class="fa-solid fa-bullseye"></i> Missão Empresarial</h2>
+    <p>
+      A missão da VerdeViva Mini Hortas é facilitar o contato das pessoas com a natureza dentro de ambientes urbanos, oferecendo mini-hortas sustentáveis, acessíveis e de fácil manutenção. Buscamos incentivar hábitos saudáveis, o cultivo doméstico de alimentos e o uso de plantas naturais no dia a dia, promovendo bem-estar e respeito ao meio ambiente.
+    </p>
+  </section>
+
+  <section id="valores">
+    <h2><i class="fa-solid fa-star"></i> Valores e Princípios</h2>
+    <p>A filosofia corporativa da VerdeViva Mini Hortas é guiada pela conexão entre pessoas e natureza. Acreditamos que o cultivo, mesmo em pequena escala, transforma vidas, fortalece o vínculo com o meio ambiente e promove saúde, equilíbrio e bem-estar.</p>
+    <p>Nossos princípios se baseiam em:</p>
+
+    <ul>
+      <li><strong>Sustentabilidade:</strong> uutilizar práticas de cultivo que respeitam o planeta e minimizam o impacto ambiental.</li>
+      <li><strong>Educação Ambiental:</strong> incentivar o conhecimento sobre plantas, suas funções e importância ecológica.</li>
+      <li><strong>Responsabilidade Social:</strong> tornar acessível o cultivo doméstico, independentemente do espaço e da realidade econômica.</li>
+      <li><strong>Inovação:</strong>  adotar métodos modernos de cultivo e aproveitamento de recursos naturais.</li>
+      <li><strong>Qualidade e Confiança:</strong>selecionar espécies de fácil adaptação, garantindo bons resultados para qualquer cliente.</li>
+      <li><strong>Saúde e Bem-estar:</strong>promover o autocuidado por meio do contato com a natureza.</li>
+    </ul>
+  </section>
+
+  <section id="historia">
+    <h2><i class="fa-solid fa-book"></i> História</h2>
+    <p>
+     A trajetória da VerdeViva Mini Hortas tem origem no início dos anos 2000, em uma pequena comunidade do interior do Paraná, onde uma horta doméstica, mantida por Vó Lurdes, tornou-se referência regional em cultivo natural. Esse espaço, organizado com simplicidade e dedicação, consolidou-se como centro informal de aprendizagem sobre plantas medicinais, temperos e espécies ornamentais, recebendo reconhecimento pela promoção de práticas sustentáveis e pela aplicação de métodos tradicionais de manejo agrícola.
+    </p>
+    <h2>Origem e Legado:</h2>
+    <p>
+      A base conceitual que viria a formar a VerdeViva Mini Hortas desenvolveu-se a partir da transmissão de conhecimento realizada por Vó Lurdes ao longo de décadas. Suas práticas envolviam técnicas ambientalmente responsáveis, como reaproveitamento de recipientes, compostagem natural e utilização de substratos orgânicos.
+      Com o passar do tempo, esse repertório de saberes foi organizado e preservado por seus netos, Thiago e Antônio, que sistematizaram anotações relacionadas ao preparo do solo, reprodução de mudas, cuidados gerais e melhor aproveitamento de resíduos orgânicos.
+      Esse conjunto de registros consolidou-se como referência para o desenvolvimento posterior de um modelo de produção voltado a mini hortas domésticas.
+    </p>
+    <h2>Fundação e Primeiros Projetos</h2>
+    <p>Inspirados pelo legado deixado por Vó Lurdes, seus descendentes deram início a um pequeno projeto voltado à produção de mini hortas utilizando materiais recicláveis e espécies de cultivo simples.
+    A comercialização inicial ocorreu em feiras locais e eventos comunitários, alcançando visibilidade devido à sua proposta pedagógica, ao baixo custo e à simplicidade dos sistemas de cultivo apresentados ao público.</p>
+    <p>A iniciativa destacou-se por promover:</p>
+    <ul>
+      <li>Incentivo ao cultivo doméstico;</li>
+      <li>Reaproveitamento de materiais;</li>
+      <li>Métodos sustentáveis de plantio;</li>
+      <li>Difusão do conhecimento tradicional a novos públicos.</li>
+    </ul>
+    <h2>Desafios e Consolidação
+    </h2>
+    <p>Nos primeiros anos, a VerdeViva Mini Hortas enfrentou dificuldades estruturais, como limitação de recursos e necessidade de ampliar a produção para atender à crescente demanda.
+    Para superar tais desafios, foram incorporadas práticas fundamentadas em princípios da biotecnologia, incluindo otimização de substratos, aprimoramento da reprodução de mudas e monitoramento mais detalhado da saúde das plantas.</p>
+    <p>Paralelamente, ações educativas foram implementadas, fortalecendo o vínculo da empresa com a comunidade por meio de parcerias com instituições de ensino, incentivando boas práticas ambientais e o desenvolvimento da consciência socioambiental.</p>
+    <h2>Expansão e Impacto Social</h2>
+    <p>O aperfeiçoamento do processo produtivo e o fortalecimento da identidade ambiental da marca contribuíram para a expansão de sua atuação. A empresa passou a oferecer kits personalizados, plantas ornamentais e recipientes sustentáveis produzidos a partir de materiais recicláveis ou biodegradáveis.</p>
+    <p>A VerdeViva tornou-se referência regional pela promoção:</p>
+    <ul>
+      <li>Da sustentabilidade urbana;</li>
+      <li>Do cultivo funcional em espaços reduzidos;</li>
+      <li>Da educação ambiental;</li>
+      <li>Do uso responsável de recursos naturais.</li>
+    </ul>
+    <p>Mais do que fornecer produtos, a VerdeViva consolidou-se como agente ativo na disseminação da horticultura doméstica, estimulando o bem-estar individual e coletivo por meio do contato direto com o cultivo.</p>
+    <h2>Perspectivas Futuras
+</h2>
+    <p>Atualmente, a VerdeViva Mini Hortas permanece comprometida com a inovação e com a sustentabilidade, buscando aprimorar continuamente seus métodos e fortalecer sua relação com o meio ambiente e com a comunidade.
+   Dessa forma, a VerdeViva reafirma seu compromisso com a preservação ambiental e com a promoção de um estilo de vida consciente, mantendo vivo o legado de Vó Lurdes através das gerações e reafirmando seu papel como elo transformador entre sociedade e natureza.</p>
+  </section>
+
+  <section id="produtos">
+    <h2><i class="fa-solid fa-cart-shopping"></i> Catálogo de Produtos</h2>
+    <div class="produtos">
+      <div class="produto">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.1Mhn66FWe1LNyx4cuqBmOQHaFj?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Mini Horta Básica">
+        <h3>Mini Horta Básica</h3>
+        <p>Contém mudas de manjericão, hortelã e cebolinha com substrato orgânico.</p>
+        <p>P - R$19,90</p>
+        <p>M - R$25,90</p>
+        <p>G - R$32,90</p>
+        <button>Comprar</button>
+      </div>
+
+      <div class="produto">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.XVAdv3wFolwEs4Zh0SjJJAHaE7?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3>Mini Horta – Gourmet</h3>
+        <p>Com temperos diferenciados para culinária variada.
+Além de uma diversidade maior de plantas</p>
+        <p>P - R$ 29,90</p>
+        <p>M - R$ 39,90</p>
+        <p>G - R$ 49,90</p>
+        <button>Comprar</button>
+      </div>
+
+      <div class="produto">
+        <img src="https://th.bing.com/th/id/R.68f6f698bf05eeec822110beac82d3b8?rik=ZIesuSuOVd8viw&pid=ImgRaw&r=0">
+        <h3>Kit Culinário Básico (3 temperos)</h3>
+        <p>Perfeito para uso diário.</p>
+        <p>P - R$24,90</p>
+        <p>M - R$29,90</p>
+        <p>G - R$39,90</p>
+        <button>Comprar</button>
+      </div>
+
+      <div class="produto">
+        <img src="https://th.bing.com/th/id/OIP.8CEno5fJsoxeaZHn17K3sgHaEx?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3> Kit Culinário Premium (5+ temperos)</h3>
+        <p>Vasos ecológicos feitos com materiais biodegradáveis.</p>
+        <p>P - R$39,90</p>
+        <p>M - R$49,90</p>
+        <p>G - R$59,90</p>
+        <button>Comprar</button>
+      </div>
+
+      <div class="produto">
+        <img src="https://3.bp.blogspot.com/-BKlk3NSdmHM/XFnZg-2ZoQI/AAAAAAAAJrM/m-BEKKxeV5Iony6u19IsA2FQPKQQ1bgWgCLcBGAs/s1600/7.jpg">
+        <h3> Vasos Decorativos – Básico</h3>
+        <p>Vasos ecológicos feitos com materiais recicláveis e biodegradáveis. Simples e funcionais.</p>
+        <p>P - R$9,90</p>
+        <p>M - R$14,90</p>
+        <p>G - R$24,90</p>
+        <button>Comprar</button>
+      </div>
+
+      <div class="produto">
+        <img src="https://th.bing.com/th/id/R.c05c66a91c5c3a1e10ef3b5e8493f36e?rik=f6JoLHVrma2rSg&riu=http%3a%2f%2fwww.euamodecoracao.com%2fwp-content%2fuploads%2f2014%2f07%2fvasos-decorativos-decoracao.jpg&ehk=uDZVOmqWy88f4SxFLIzJvGQPVjHnxcRNsDxUbgej53c%3d&risl=&pid=ImgRaw&r=0">
+        <h3> Vasos Decorativos – Personalizados</h3>
+        <p>Artesanais, com pintura exclusiva.</p>
+        <p>P - R$19,90</p>
+        <p>M - R$29,90</p>
+        <p>G - R$44,90</p>
+        <button>Comprar</button>
+      </div>
+
+      <div class="produto">
+        <img src="https://blog.leroymerlin.com.br/wp-content/uploads/2024/05/conjunto_de_ferramentas_4_pecas_para_vaso_85258320_5fb0_600x600.jpg">
+        <h3>Acessórios de Jardinagem</h3>
+        <p>Itens básicos para cultivo</p>
+        <p>Preço: R$9,90 – R$39,90</p>
+        <button>Comprar</button>
+      </div>
+
+      <div class="produto">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.hYUS5ImiGgCJOVtWidyl2AHaHa?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3>Mini Suculentas Premium</h3>
+        <p>Espécies raras de fácil cuidado.</p>
+        <p>P	R$14,90</p>
+        <p>M	R$22,90</p>
+        <p>G	R$32,90</p>
+        <button>Comprar</button>
+      </div>
+      <div class="produto">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.wTwjK_lDaZmRNAeEfKerawHaJI?rs=1&pid=ImgDetMain&o=7&rm=3">
+        <h3>Terrários Decorativos</h3>
+        <p>Mini ecossistemas decorativos.</p>
+        <p>P	R$34,90</p>
+        <p>M	R$49,90</p>
+        <p>G	R$69,90</p>
+        <button>Comprar</button>
+      </div>
+
+      <div class="produto">
+        <img src="https://th.bing.com/th/id/R.53c0b3d13113804a3033c93c96711a53?rik=C8uTt0C4ARv9bw&pid=ImgRaw&r=0">
+        <h3>Mini-Hortas Personalizadas</h3>
+        <p>Você escolhe as plantas e acessórios.</p>
+        <p>P	R$ 59,90</p>
+        <p>M	R$ 79,90</p>
+        <p>G	R$ 99,90</p>
+        <button>Comprar</button>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2><i class="fa-solid fa-phone-volume"></i> Contato</h2>
+    <p><strong>📍 Localização:</strong> Cambé – PR</p>
+    <p><strong>📧 E-mail:</strong> contato@verdeviva.com</p>
+    <p><strong>📱 WhatsApp:</strong> (43) 99999-9999</p>
+    <p><strong>📲 Instagram:</strong> @verdeviva.hortas</p>
+  </section>
+
+  <footer>
+    <p>© 2025 CCM Attilio Codato | Thiago Berbert Peixoto | Antonio Neto</p>
+  </footer>
+</body>
+</html>
